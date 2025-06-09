@@ -1,0 +1,178 @@
+[
+  {
+    "id": "pedidos",
+    "uri": "features/pedido.feature",
+    "keyword": "Funcionalidade",
+    "name": "Pedidos",
+    "description": "    Como um usuário do site Starbugs, eu quero selecionar e comprar cafés\n    Para que eu possa receber os produtos em meu endereço e efetuar o pagamento na entrega",
+    "line": 3,
+    "elements": [
+      {
+        "id": "pedidos;compra-bem-sucedida",
+        "keyword": "Cenário",
+        "name": "Compra bem sucedida",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou na página principal da Starbugs",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5857405500
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "que iniciei a compra do item \"Expresso Tradicional\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 919806800
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "faço a busca do seguinte CEP: \"04534011\"",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 980029800
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "informo os demais daods do endereço:",
+            "line": 14,
+            "rows": [
+              {
+                "cells": [
+                  "number",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "details",
+                  "Apto 22"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121853800
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "escolho a forma de pagamento \"Cartão de Débito\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276978500
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "por fim finalizo a compra",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 411173500
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "sou redirecionado para a página de confirmação de Pedidos",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132433100
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "deve ser informado o seguinte prazo e entrega \"20 min - 30 min\"",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188419500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259907600
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
